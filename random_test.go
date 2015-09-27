@@ -1,4 +1,4 @@
-package geosonrandom
+package geojsonrandom
 
 import (
 	"fmt"
