@@ -47,7 +47,7 @@ func RandomPointsInBox(count int, bbox []float64) []Geometry {
 	var geometryArr []Geometry
 	for index := 0; index < count; index++ {
 		u := (rand.Float64() * (bbox[2] - bbox[0])) + bbox[0]
-		v := (rand.Float64() * (bbox[2] - bbox[0])) + bbox[0]
+		v := (rand.Float64() * (bbox[3] - bbox[1])) + bbox[1]
 		x := float64(int(u*1e6)) / 1e6
 		y := float64(int(v*1e6)) / 1e6
 		geometryArr = append(geometryArr, Geometry{Type: point, Coordinates: []float64{x, y}})
